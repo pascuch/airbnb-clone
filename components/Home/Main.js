@@ -22,7 +22,7 @@ function Main({ smallCardData, mediumCardData}) {
             </section>
             <section>
                 <h2 className="text-4xl font-semibold p-4">Live Anywhere</h2>
-                <div className="flex gap-3 overflow-scroll h-96 scrollbar-hide p-3 -ml-3">
+                <div className="flex overflow-scroll h-96 scrollbar-hide p-3 -ml-3">
                     {mediumCardData?.map(e => (
                         <MediumCard 
                             key={e.title}
