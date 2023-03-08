@@ -1,4 +1,5 @@
 import { getCenter } from 'geolib'
+import Image from "next/image"
 import { useState } from 'react'
 import ReactMapGL, { Marker, Popup }from 'react-map-gl'
 import { LocationMarkerIcon } from '@heroicons/react/solid'
@@ -22,7 +23,7 @@ function Map({ searchResults }) {
       zoom: 10
     })
 
-    console.log(selectedLocation)
+    console.log({selectedLocation})
 
   return (
     <ReactMapGL

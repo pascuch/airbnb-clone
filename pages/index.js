@@ -27,10 +27,10 @@ export default function Home({ smallCardData, mediumCardData}) {
 }
 
 export async function getStaticProps() {
-  const smallCardData = await fetch('https://jsonkeeper.com/b/4G1G')
+  const smallCardData = await fetch('https://www.jsonkeeper.com/b/4G1G')
                       .then(res => res.json())
 
-  const mediumCardData = await fetch('https://jsonkeeper.com/b/VHHT')
+  const mediumCardData = await fetch('https://www.jsonkeeper.com/b/VHHT')
                       .then(res => res.json())
 
   return {
